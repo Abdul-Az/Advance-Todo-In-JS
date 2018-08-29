@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="todostyle.css">
+    <script type = "text/javascript" src="todoscript.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <title>Todo App</title>
+</head>
+<body>
+<div class="myContainer">
+   <div class="header"> <h1 class="header">Todo</h1> </div>
+
+    <div class="row2" >
+    <button class="addbutton" type="button" onclick="addTask()">Add Task</button>
+    <!-- <input  class="filterarea" type="text" placeholder="Filter" maxlength = "30" onchange="filterTasks(this.value)"> -->
+    </div>
+    <div id="tasksList" class="tasksList"></div>
+      <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content" style="border-radius: 30px;">
+            <div class="modal-header" style="padding:35px 50px;">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="clear" onclick="resetTask()" class="btn btn-success btn-block">  Add Task</h4>
+            </div>
+            <div class="modal-body" style="padding:40px 50px;">
+              <form id="addForm" role="form" style="text-align: left;">
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter Task Title">
+                </div>
+                <div class="form-group">
+                  <label for="desc">Description</label>
+                  <textarea style="resize: none" rows= "8" cols= "5" class="form-control" id='desc' placeholder="Enter Task Description"></textarea>
+                </div>
+                <div>
+                  <label><button type="button" class="btn btn-info btn-block" onclick="toggleDate()"><span class="glyphicon glyphicon-bell"> </span>Remind me</label></button>
+                  <input id="dateandtime" type="datetime-local" style="margin-left: 5px; display: none;">
+                </div>
+                  <button type="button" class="btn btn-success btn-block"  onclick="saveTask()">Save</button>
+                  <input type="reset" class="btn btn-primary btn-block" value="Clear"/>
+              </form>
+            </div>
+          </div>
+          </div>
+          </div>
+
+</div>
+
+    
+</body>
+</html>

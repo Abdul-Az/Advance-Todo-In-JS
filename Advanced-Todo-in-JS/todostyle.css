@@ -1,0 +1,135 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    background: #8E0E00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #8E0E00, #1F1C18);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #8E0E00, #1F1C18);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background-image: url("collage.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* width: 100%; */
+    /* background-position: center; */
+    
+}
+
+.glyphicon-edit{
+    background: transparent;
+    border: none;    
+}
+
+.glyphicon-trash{
+    background: transparent;
+    border: none;
+    
+}
+.glyphicon-edit:hover{
+    color: blue;
+}
+
+.glyphicon-trash:hover{
+    color: red;
+}
+ .header{
+    width: auto;
+    height: 60px;;
+}
+
+    h1 {
+        background: #1F030C;
+        color: white;
+        margin: 0;
+        padding: 20px 100px;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: normal;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+
+
+.myContainer{
+    /* border : 1px solid #999; */
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    height: 70vh;
+    margin-top: 15vh;
+    border-radius: 30px;
+    /* box-shadow: -1px -1px 5px 11px rgba(237,238,242,1); */
+}
+
+.row2{
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.addbutton {
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #AD133A;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    
+}
+/* .filterarea{
+    border-radius: 15px;
+    padding-left: 15px;
+} */
+  
+  .addbutton:hover {
+    background: #4c2827;
+    border-bottom-color: #111;
+  }
+  
+
+#tasksList{
+    text-align: left;
+    margin: 2%;
+    padding: 1%;
+}
+
+.todolistEle{
+    cursor: pointer;
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+.safe{
+    background: green;
+    color: #fff;
+}
+
+.neutral{
+    background: yellow;
+    color: #000;
+}
+.unsafe{
+    background: red;
+    color: #fff;
+}
+
+.tilesSeperator{
+    border: 1px solid #999;
+    padding: 1%;
+    font-size: 12pt;
+    font-family: calibri;
+}
+
+.hide{
+    display:none;
+}
+
+.show{
+    display:block;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+}
